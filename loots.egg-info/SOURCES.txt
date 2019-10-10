@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+loots/__main__.py
+loots/cli.py
+loots/loot.py
+loots/misc.py
+loots/tests.py
+loots.egg-info/PKG-INFO
+loots.egg-info/SOURCES.txt
+loots.egg-info/dependency_links.txt
+loots.egg-info/entry_points.txt
+loots.egg-info/requires.txt
+loots.egg-info/top_level.txt
