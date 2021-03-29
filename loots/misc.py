@@ -35,7 +35,6 @@ def prepare(inputfiles):
 
     allfiles = []
     for i in inputfiles:
-        print(i, os.path.isdir(i))
         if os.path.isfile(i):
             allfiles.append(i)
 
