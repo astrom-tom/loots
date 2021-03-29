@@ -35,11 +35,17 @@ def prepare(inputfiles):
 
     allfiles = []
     for i in inputfiles:
+        print(i, os.path.isdir(i))
         if os.path.isfile(i):
             allfiles.append(i)
 
         if os.path.isdir(i):
             rec = os.listdir(i)
             for j in rec:
-                allfiles.append(os.path.join(i,j))
+                if os.path.isdir(j):
+                    rec2 = os.listdir(j)
+                    for k in rec2:
+                        allfiles.append(os.path.join(i,j,k))
+                else:
+                    allfiles.append(os.path.join(i,j))
     return allfiles
